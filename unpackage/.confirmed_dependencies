@@ -1,0 +1,11 @@
+{
+	"index.html": {
+		"resources": [
+			"css/img/py.jpg",
+			"css/js/jquery.min.js",
+			"css/iconfont.woff",
+			"css/js/js.js",
+			"css/styles.css"
+		]
+	}
+}

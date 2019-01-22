@@ -1,0 +1,510 @@
+/*-----------------countdown_css-----------------------*/
+nav ul ul li>a, nav ul li a {
+	text-transform: capitalize;
+}
+.jarviswidget header:first-child .tree_structure li a {
+	color: #333 !important;
+}
+.jarviswidget.tree_container {
+	padding: 13px 13px 13px;
+}
+small.small_content {
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #f1c40f;
+}
+.countdown_timer {
+	padding: 20px 0 20px 0;
+}
+#clockdiv1 {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	width: 45%;
+}
+#clockdiv1 > div {
+	padding: 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+#clockdiv1 div > span {
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+#clockdiv2 {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	width: 50%;
+}
+#clockdiv2 > div {
+	padding: 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+#clockdiv2 div > span {
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+.smalltext {
+	padding-top: 5px;
+	font-size: 13px;
+	color: #666;
+}
+#clockdiv1 h6, #clockdiv2 h6 {
+	color: #000000;
+	font-size: 12px;
+}
+#clockdiv1 h3, #clockdiv2 h3 {
+	font-size: 15px;
+ font-weight:
+ margin: 0;
+	text-transform: capitalize;
+	margin: 0;
+}
+.profile_info_block {
+	width: auto;
+	padding: 10px 10px 20px 10px;
+}
+.profile-pic {
+	width: auto;
+}
+.profile-pic>img {
+	top: 6px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	border: 5px solid white;
+}
+.profile_info {
+	width: auto;
+	padding: 0px 10px 10px 20px;
+}
+.profile_buttons {
+	float: right;
+	margin: 5px 20px 0 0px;
+}
+.profile_buttons ul {
+	padding: 53px 0 0 0;
+	float: left;
+}
+.profile_buttons ul li {
+	display: inline-block;
+}
+.align_right {
+	text-align: right;
+}
+.align_center {
+	text-align: center;
+}
+td.result_bold {
+	font-weight: bold;
+}
+.widget-body.no-padding {
+	margin: -13px -13px 0;
+	min-height: 20px;
+}
+.jarviswidget {
+	margin: 0 0 10px;
+}
+.table_block {
+	width: 100%;
+}
+.table_left_block {
+	width: 50%;
+	float: left;
+	padding: 0 0 50px 0;
+}
+.table_right_block {
+	width: 50%;
+	float: left
+}
+.col_table {
+	width: 100%;
+}
+.col_table .form-control {
+	width: 100%;
+}
+.col_table .selectContainer {
+	width: auto;
+}
+ul.action_button {
+	padding: 10px 0 0 0;
+}
+ul.action_button li {
+	list-style-type: none;
+	float: left;
+	padding: 0 10px 0 0px;
+}
+.placement_setting_profile {
+	width: 30%;
+}
+.placement_setting_block {
+	width: 70%;
+}
+.placement_setting_input {
+	width: 40%;
+}
+.table_pagination {
+	float: right;
+}
+.table_pagination .pagination {
+	margin: 0 0 10px 0;
+}
+.sponsor_date_block section {
+	width: 20% !important;
+	float: left !important;
+}
+.widget-body.no-padding {
+	min-height: inherit !important;
+}
+.sponsor_date_block fieldset {
+	padding: 10px 14px 0px 14px !important;
+}
+.sponsor_date_block label.input {
+}
+.sponsor_date_block {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.widget_body_sponsor_date_block {
+	width: 100%;
+}
+.sponsor_date_block .action_buttons {
+	margin: 0 10px 0 0px;
+	float: left;
+}
+.sponsor_date_block .action_buttons_nobg {
+	margin: 6px 0 0 0;
+}
+.distributor_input {
+	width: 100%;
+	float: left;
+}
+.distributor_input input {
+	width: 20%;
+	float: left;
+	margin: -17px 10px 10px 0px;
+}
+.seprator, .seprator_white {
+	float: left;
+	padding: 0 10px 0px 0px;
+	position: relative;
+	bottom: 13px;
+}
+.action_buttons {
+	margin: -16px 0 0 0;
+}
+.table_align th {
+	text-align: center;
+}
+.table_align tr {
+	text-align: center;
+}
+.sum_value {
+	color: #C00;
+	text-align: right;
+}
+.message_badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 2px 4px;
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #F00;
+	border-radius: 10px;
+	position: absolute;
+	margin: 0px 0 0 -3px;
+	border: 2px solid white;
+}
+.seprator_white {
+	color: #FFF;
+}
+p.member_count_description {
+	float: left;
+}
+#member_count {
+	color: #C30;
+	font-weight: bold;
+}
+.bonus_year_block {
+	float: left;
+}
+.bonus_year_block .form-group {
+	float: left;
+}
+.bonus_year_block .form-control {
+	float: left;
+}
+.bonus_table {
+}
+td.bonus_total_price {
+	color: #C30;
+	font-weight: bold;
+}
+.bonus_total {
+	float: right;
+}
+.bonus_total h6 {
+	color: #06C;
+	margin: -10px 10px 20px 0px;
+}
+.bonus_total span {
+	color: #C30;
+}
+.selectContainer {
+	width: auto;
+}
+.selectContainer select.form-control {
+}
+.widget-body_from_date {
+	float: left;
+	margin: 0 0 10px 0;
+}
+.seprator_text {
+	float: left;
+	padding: 8px 0 0 0;
+	font-weight: bold;
+}
+.week_bonus_result {
+}
+.result_block {
+	width: 50%;
+	float: left;
+}
+.result_block p {
+	font-size: 14px;
+}
+span.result_label {
+	font-weight: 600;
+}
+span.block_result {
+	color: #000;
+}
+.alert-block {
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.clear_block {
+	clear: both;
+}
+.jarviswidget>header {
+	clear: both;
+}
+.check_green {
+	color: #27ae60;
+}
+.check_red {
+	color: #e74c3c;
+}
+.top_buttons {
+	float: right;
+}
+.order_search {
+	float: right;
+	width: auto;
+	clear: both;
+	margin: -10px 0 10px 0;
+}
+.order_search input {
+	float: right;
+	width: 70%;
+	height: 30px;
+	margin: 1px 3px 0px 0px;
+}
+.order_search a {
+	float: right;
+}
+.advanced_search {
+	margin: -10px 10px 0 0px;
+}
+.graph_select {
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.graph_select select.form-control {
+	float: left;
+	width: 15%;
+	margin: 0 15px 0 0px;
+}
+.graph_select .selectContainer {
+	float: left;
+	width: 100%;
+}
+.graph_select .widget-body {
+}
+.adjust {
+	padding: 13px 0 10px 0 !important;
+}
+
+/*---------------------------------------------*/
+@media (max-width:1024px) {
+.profile_info {
+	width: 34%;
+}
+.placement_setting_block {
+	width: 100%;
+}
+}
+
+@media (max-width:768px) {
+.profile_info {
+	width: 40%;
+	padding: 0px 10px 10px 20px;
+}
+.profile-pic>img {
+	margin-right: 0px;
+}
+}
+
+@media (max-width:479px) {
+.profile_info {
+	width: 67%;
+	padding: 0px 10px 10px 10px;
+	float: left;
+}
+.profile_buttons ul {
+	padding: 13px 0 0 0;
+	float: left;
+}
+#clockdiv1, #clockdiv2 {
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+.profile-pic+div, .profile-pic+div+div {
+	padding-left: 10px;
+	padding-right: 0;
+}
+.table_left_block, .table_right_block {
+	width: 100%;
+}
+.col_table .form-control {
+	width: 40%;
+	float: left;
+	margin: 0 0 0 10px;
+}
+.placement_setting_input {
+	width: 100%;
+}
+.table_pagination {
+	width: 100%;
+	text-align: center;
+}
+.seprator, .seprator_white {
+	display: none;
+}
+.distributor_input input {
+	width: 100%;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+.action_buttons {
+	margin: 0px 0 10px 0;
+	float: right;
+}
+.message_badge {
+	position: relative;
+	right: 0px;
+}
+p.member_count_description {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 0px 0 10px 0;
+}
+.bonus_total h6 {
+	margin: -18px 8px 11px 0px;
+}
+.selectContainer {
+	width: auto;
+}
+.selectContainer select.form-control {
+	margin: 0px 0 10px 0;
+}
+.selectContainer a {
+	float: right;
+}
+.from_date {
+	width: 47%;
+}
+.date_search a {
+	float: right;
+	margin: -10px 20px 10px 0px;
+}
+.seprator_text {
+	padding: 48px 0 0 0;
+}
+.result_block {
+	width: 100%;
+}
+.order_search input {
+	width: 60%;
+}
+.order_search {
+	margin: -10px 9px 10px 0px;
+}
+.advanced_search {
+	margin: 0px 10px 10px 0px;
+	float: right;
+}
+.graph_select select.form-control {
+	width: 45%;
+	margin: 0 15px 0 0px;
+}
+.graph_select .selectContainer a {
+	float: left;
+	margin: 10px 0 0 23px;
+}
+.sponsor_date_block section {
+	width: 100% !important;
+	float: left !important;
+}
+.sponsor_date_block .action_buttons {
+	margin: 0 16px 10px 0px;
+	float: right;
+}
+table.has-columns-hidden>tbody>tr.row-detail>td>ul li {
+	padding: 5px 0 5px 0px;
+}
+.align_center {
+	text-align: left;
+}
+.align_right {
+	text-align: left;
+}
+}
+
+@media (max-width:320px) {
+#clockdiv1 > div, #clockdiv2 > div {
+	padding: 5px;
+}
+.profile_info {
+	width: 75%;
+}
+.selectContainer select.form-control {
+	margin: 0px 0 10px 10px;
+}
+.profile_info {
+	width: 56%;
+}
+.graph_select .selectContainer a {
+	float: left;
+	margin: 0 0 0 10px;
+}
+}

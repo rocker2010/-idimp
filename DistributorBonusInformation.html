@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Distributor Real Time Turnover</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript" src="css/js/jquery.dropkick.js"></script>
+<script type="text/javascript">
+$(function(){
+	 $('.dropkick').dropkick(); })</script>
+<script type="text/javascript">
+$(document).ready(function() {
+//获取需要添加到文本的字符串
+var str = '<%=strList %>';
+   $("#btnAdd").click(function(){adTable("thetable",10)});
+	function adTable(tableName,num) {
+		var tn="#"+tableName;
+				for (i=0;i<=num;i++){
+            //先把指定html元素添加到表格
+            $(tn).append($("<tr><td>"+ i + "</td><td>8</td><td>8</td><td>8</td><td>8</td></tr>"));
+						}
+            //分割字符 追加到对应的文本框或者select
+            if (str.length > 0) {
+                    var strList = str.split("|");
+                    //分类ID
+                    var catId = strList[0].split(",")[1];
+                    $("#inp" + i).val(strList[0].split(",")[0]);
+                    var cateList = strList[1].split(",");
+
+                    //循环 添加到select
+                    for (var j = 0; j < cateList.length; j++) {
+                        var key = cateList[j].split("&");
+
+                        //如果分类匹配 设置选中状态
+                        if (key[1] == catId) {
+                            $("#sel" + i).append("<option value='" + key[1] + "' selected='selected'>" + key[0] + "</option>");
+                        }
+                        else {
+                            $("#sel" + i).append("<option value='" + key[1] + "'>" + key[0] + "</option>");
+                        }
+                    }
+                }
+   }
+})
+</script>
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="css/js/html5.min.js"></script>
+		<![endif]-->
+	</head>
+<body>
+<header><a href="index.html" class="home"></a>
+  <div class="inline_box">
+    <div class="inline_five h5 bgf"></div>
+    <div class="inline_five h5 bgz"></div>
+    <div class="inline_five h5 bgn"></div>
+    <div class="inline_five h5 bgr"></div>
+    <div class="inline_five h5 bgz"></div>
+  </div>
+  <div class="logo pl10 rel mb10 mt10 ">
+    <div class="logoNav pr10 abs">
+      <p><i class="mr5 icon-ct"><img src="css/img/py.jpg"></i></p>
+    </div>
+  </div>
+<h1 class="f14 cy pl10">Welcome,Jean lve Ruaule(87034539,7 Stars)</h1>
+</header>
+<article class="p10"  id="content">
+  <h1 class="p5 mb10 f16 b tc bgr wh">Distributor Bonus Information</h1>
+  <div class="mb10 line2 pb10">
+    <p>
+      <label for="dinnerOrder" data-length="8">Select terms (YearMonth):</label>
+      <select class="dropkick">
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+        <option value="201404">201405</option>
+      </select>
+    </p>
+  </div>
+  <div class="b mb10">Currency: RUB</div>
+  <table class="tab2 mb10">
+    <tbody>
+      <tr>
+        <th>Total Bonus</th>
+        <td>1,854,335.89</td>
+      </tr>
+      <tr>
+        <th>Computer Fee</th>
+        <td>489.19</td>
+      </tr>
+      <tr>
+        <th>Taxation</th>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Adjustment</th>
+        <td>-30.33</td>
+      </tr>
+      <tr>
+        <th>Discount</th>
+        <td>6,193.62</td>
+      </tr>
+      <tr>
+      	<th class="bgl">Real Bonus</th>
+        <td>1,847,622.75</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="line2 mb10"></div>
+  <p class="b mb10">Bonus Detail</p>
+  <div id="fb" class="ovh">
+  <div class="loadingMask"><img src="css/img/loading.gif" alt=""></div>
+    <ul>
+      <li>
+        <table class="tab1 mb10">
+          <tbody>
+            <tr>
+              <td class="radl6"><div class="mr5 icon-py"></div>BYR</td>
+              <td>2,065.11 USD</td>
+              <td class="radr6"><a href="javascript:void(0)" onClick="moveL(2)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+            <tr class="highlight">
+              <td><div class="mr5 icon-en"></div>UKR</td>
+              <td>37,485.47 UAH</td>
+              <td><a href="javascript:void(0)" onClick="moveL(2)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+            <tr>
+              <td><div class="mr5 icon-zh"></div>KAZ</td>
+              <td>10,824.43 USD</td>
+              <td><a href="javascript:void(0)" onClick="moveL(2)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+            <tr class="highlight">
+              <td><div class="mr5 icon-cz"></div>RUS</td>
+              <td>1,035,617.94 RUB</td>
+              <td><a href="javascript:void(0)" onClick="moveL(2)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p class="mb10"><a href="javascript:void(0)"  onClick="moveL(1)" class="btn redbtn"><i class="iconfont cb f16 mr5 wh">&#xe618;</i>Back</a> </p>
+        <div class="line2"></div>
+        <table class="tab2 mb10">
+          <caption>
+          <div class="mr5 icon-py"></div>UKR
+          </caption>
+          <tbody>
+            <tr>
+              <th>Leadership Bonus</th>
+              <td>10,335.39 USD</td>
+              <td><a href="javascript:void(0)" onClick="moveL(3)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+            <tr>
+              <th>Indirect Bonus</th>
+              <td>489.04 USD</td>
+              <td><a href="javascript:void(0)" onClick="moveL(3)"><i class="iconfont f16 lh16 mr2">&#xe614;</i>Detail</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="line2 mb10"></div>
+        <table class="tab2 mb10">
+          <tbody>
+            <tr>
+              <th>Bonus Subtotal</th>
+              <td>10,824.43 USD</td>
+            </tr>
+            <tr>
+              <th>Currency Exchange</th>
+              <td>10,824.43*35.69/1=386,323.71 RUB</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p class="mb10"><a href="javascript:void(0)"  onClick="moveL(2)" class="btn redbtn"><i class="iconfont cb f16 mr5 wh">&#xe618;</i>Back</a> </p>
+        <div class="line2"></div>
+        <table class="tab1 mb10" id="thetable">
+          <caption>
+          <div class="mr5 icon-py"></div>UKR - Leadership Bonus
+          </caption>
+          <tr>
+            <th>Sr.</th>
+            <th>Source</th>
+            <th>Rank</th>
+            <th>Bonus<br>
+              (USD)</th>
+            <th>Tier</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Садыкова Салима Амангельдыновна<br>
+              (99733128)</td>
+            <td>8</td>
+            <td>282.00</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Шепина Елена Владимировна<br>
+              (99128450)</td>
+            <td>8</td>
+            <td>8,928.00</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Тухватшина Райхана<br>
+              (88604953)</td>
+            <td>8</td>
+            <td>250.00</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Жапаракунов Белек, Айталиева Нурайым<br>
+              (71101355)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Корнеева Людмила Владимировна<br>
+              (86361541)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Саурбаева Гульмира Амангельдиевна<br>
+              (87625742)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Садыкова Салима Амангельдыновна<br>
+              (99733128)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Садыкова Салима Амангельдыновна<br>
+              (99733128)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Садыкова Салима Амангельдыновна<br>
+              (99733128)</td>
+            <td>8</td>
+            <td>276.48</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Жапаракунов Белек, Айталиева Нурайым<br>
+              (71101355)
+              </p></td>
+            <td>8</td>
+            <td>250.00</td>
+            <td>7</td>
+          </tr>
+        </table>
+        <div class="bgwh tc"><div class="loading">
+    <div class="a"></div>
+  </div><span class="abs ml10 mt10">正在加载......</span></div>
+        <a class="btn redbtn mb10 db" href="javascript:void(0)" id="btnAdd">+ Click here to load next 10 lines +</a>
+      </li>
+    </ul>
+  </div>
+  <p><i class="iconfont cb f16 mr5">&#xe607;</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+<footer class="tc pct100 p5" id="footer">2014 Tiens @ All Rights Reserved</footer>
+</article>
+
+<!--以下是底部导航-->
+<nav class="inline_box tc bgwh" id="navTopMenu">
+  <div class="inline_five nav1 mr2">
+    <div class="nav p5 tc wh poi">
+      <div class="name">System</div>
+    </div>
+  </div>
+  <div class="inline_five nav2 mr2">
+    <div class="nav p5 tc wh poi">
+      <div class="name">Business</div>
+    </div>
+  </div>
+  <div class="inline_five nav3 mr2">
+    <div class="nav p5 tc wh poi">
+      <div class="name">Products</div>
+    </div>
+  </div>
+  <div class="inline_five nav4 mr2">
+    <div class="nav p5 tc wh poi">
+      <div class="name">Information</div>
+    </div>
+  </div>
+  <div class="inline_five nav5">
+    <div class="nav p5 tc wh poi">
+      <div class="name">Personal</div>
+    </div>
+  </div>
+</nav>
+<ul id="nav1">
+  <li><a href="changeskin.html" class="vm nav1D">Skin</a></li>
+  <li><a href="changecountry.html" class="vm nav1B">Country</a></li>
+  <li><a href="changeLanguage.html" class="vm nav1C">Language</a></li>
+  <li><a href="login.html" class="vm nav1A">Sign Out</a></li>
+</ul>
+<div id="navItem" class="pct80">
+  <ul id="nav2" style="display:none">
+
+    <li><a href="DistributorRankAdvancementAnalysis.html">Rank Advancement Analysis</a></li>
+    <li><a href="UpgradeAssistant.html">Upgrade Assistant</a></li>
+    <li><a href="DistributorNetworkInformation.html">Distributor Network Information</a></li>
+    <li><a href="DistributorHonourInformation.html">Distributor Honor Information</a></li>
+    <li><a href="DistributorBonusInformation.html">Distributor Bonus Informaiton</a></li>
+    <li><a href="DistributorRealTimeTurnover.html">Distributor Real Time Turnover</a></li>
+  </ul>
+  <ul id="nav3" style="display:none">
+    <li><a href="product/Nutritions.html">Tiens  Mobile  E-shop</a></li>
+  </ul>
+  <ul id="nav4" style="display:none">
+    <li><a href="AboutTina.html">About Us</a></li>
+    <li><a href="Branch.html">Branch Offices</a></li>
+    <li><a href="MeetingsandEvents.html">Meetings and Events</a></li>
+    <li><a href="http://sj.tiens.com/M/">Video</a></li>
+    <li><a href="AudioBooks.html">Audio Books</a></li>
+    <li><a href="Newsfl.html">News</a></li>
+  </ul>
+  <ul id="nav5" style="display:none">
+    <li><a href="UpdatePersonalInformation.html">Update Personal Information</a></li>
+    <li><a href="changePassword.html">Change Password</a></li>
+    <li><a href="suggestions_and_feedbacks.html">Suggestions and Feedbacks</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="index.html">Quit</a></li>
+  </ul>
+</div>
+<div id="div_mask" ></div>
+<!--底部导航结束--> 
+<script type="text/javascript" src="css/js/js.js"></script>
+</body>
+</html>

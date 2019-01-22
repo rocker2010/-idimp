@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>22ND 后台管理</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.6 -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="./dist/css/font-awesome/css/font-awesome.min.css">
+		<!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+		<link rel="stylesheet" href="./dist/css/skins/_all-skins.min.css">
+		<!-- bootstrap datepicker -->
+		<link rel="stylesheet" href="./plugins/datepicker/datepicker3.css">
+		<!--Tiens css-->
+		<link rel="stylesheet" href="./dist/css/my.css">
+		<!-- iCheck for checkboxes and radio inputs -->
+		<link rel="stylesheet" href="./plugins/iCheck/all.css">
+		<!-- DataTables -->
+		<!--<link rel="stylesheet" href="./plugins/datatables/dataTables.bootstrap.css">-->
+		<!-- Select2 -->
+		<!--<link rel="stylesheet" href="./plugins/select2/select2.min.css">-->
+		<!-- Theme style -->
+		<link rel="stylesheet" href="./dist/css/AdminLTE.min.css">
+		<style type="text/css">
+			.margin-bottom-5 {
+				margin-bottom: 5px;
+			}
+			
+			div.dataTables_info {
+				padding-top: 9px;
+				font-size: 13px;
+				font-weight: 700;
+				font-style: italic;
+				color: #969696;
+			}
+			
+			div.dataTables_paginate ul.pagination {
+				margin: 2px 0;
+				white-space: nowrap;
+			}
+			
+			div.dataTables_paginate,
+			div.DTTT.btn-group {
+				float: right;
+				margin: 0;
+			}
+			
+			table.has-columns-hidden>tbody>tr.row-detail>td {
+				background: #eee;
+			}
+			
+			table.has-columns-hidden>tbody>tr.row-detail>td>ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			table.dataTable thead .sorting {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAgMAAAAPPt5fAAAACVBMVEUAAADIyMjl5eVIBBP/AAAAAXRSTlMAQObYZgAAAClJREFUCNdjwAYEwGQKiGDsBJFsTA5AUoJhAqZaiDhEDVg9RC/MHEwAANsMA91AQfd/AAAAAElFTkSuQmCC) no-repeat center right
+			}
+			
+			table.dataTable thead .sorting_asc {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAAB1JREFUCNdjwAkcgPgBAwPjBwYG5h8MDOx/GAgBAKRJBBCQbHkwAAAAAElFTkSuQmCC) no-repeat center right
+			}
+			
+			table.dataTable thead .sorting_desc {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABVVVUT3Vn+AAAAAXRSTlMAQObYZgAAABxJREFUCNdjIATY/zAwMP9gYGD8AOQ8AGIHnEoBkNkEEEbbutQAAAAASUVORK5CYII=) no-repeat center right
+			}
+			
+			table.dataTable thead .sorting_asc_disabled {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABUVFR8AzIeAAAAAnRSTlMAf7YpoZUAAAAdSURBVAjXY8AJHID4AQMD4wcGBuYfDAzsfxgIAQCkSQQQkGx5MAAAAABJRU5ErkJggg==) no-repeat center right
+			}
+			
+			table.dataTable thead .sorting_desc_disabled {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATAQMAAABInqSPAAAABlBMVEUAAABUVFR8AzIeAAAAAnRSTlMAf7YpoZUAAAAcSURBVAjXYyAE2P8wMDD/YGBg/ADkPABiB5xKAZDZBBBG27rUAAAAAElFTkSuQmCC) no-repeat center right
+			}
+			
+			table.has-columns-hidden>tbody>tr>td>span.responsiveExpander {
+				background: url(dist/img/plus.png) no-repeat 5px center;
+				padding-left: 32px;
+				cursor: pointer
+			}
+			
+			table.has-columns-hidden>tbody>tr.detail-show>td span.responsiveExpander {
+				background: url(dist/img/minus.png) no-repeat 5px center
+			}
+		</style>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini">
+		<!-- Site wrapper -->
+		<div class="wrapper">
+			<header class="main-header">
+				<!-- Logo -->
+				<a href="./index.html" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><img src="./dist/img/logo.png" style="width: 36px;"/></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><img src="./dist/img/logo.png" style="width: 36px; margin: 0 5px 5px 0;"/><b>TIENS</b>&nbsp;&nbsp;22ND</span>
+				</a>
+				<!-- Header Navbar: style can be found in header.less -->
+				<nav class="navbar navbar-static-top">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<ul class="header-dropdown-list hidden-xs">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="dist/img/blank.gif" class="flag flag-us" alt="United States"> <span> English (US) </span> <i class="fa fa-angle-down"></i> </a>
+							<ul class="dropdown-menu pull-right">
+								<li class="active">
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-fr" alt="France"> Français</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-de" alt="German"> Deutsch</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-jp" alt="Japan"> 日本語</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-pt" alt="Portugal"> Portugal</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-ru" alt="Russia"> Русский язык</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="dist/img/blank.gif" class="flag flag-kr" alt="Korea"> 한국어</a>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown notifications-menu" data-toggle="tooltip" data-placement="bottom" title="返回前台">
+								<a href="#" class="dropdown-toggle" target="_blank">
+									<i class="fa fa-home"></i> </a>
+							</li>
+							<li class="dropdown messages-menu" data-toggle="tooltip" data-placement="bottom" title="修改密码">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-key"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<!-- inner menu: contains the actual data -->
+										<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;">
+											<ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+												<li>
+													<div class="box-body">
+														<!-- start message -->
+														<div class="form-group">
+															<label for="exampleInputPassword1">旧密码</label>
+															<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+														</div>
+														<div class="form-group margin-bottom-none">
+															<label for="exampleInputPassword1">新密码</label>
+															<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+														</div>
+													</div>
+												</li>
+												<li class="box-footer text-center">
+													<button type="submit" class="btn btn-primary btn-sm">Submit</button>
+												</li>
+												<!-- end message -->
+											</ul>
+											<div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+											<div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- User Account: style can be found in dropdown.less -->
+							<li class="dropdown user user-menu" data-toggle="tooltip" data-placement="bottom" title="会员信息">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="./dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+									<span class="hidden-xs">Alexander Pierce</span>
+								</a>
+								<ul class="dropdown-menu">
+									<!-- User image -->
+									<li class="user-header">
+										<img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+										<p>
+											Alexander Pierce - Web Developer
+											<small>Member since Nov. 2012</small>
+										</p>
+									</li>
+									<!-- Menu Body -->
+									<!--<li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+              </li>-->
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">会员信息</a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">退出</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- Control Sidebar Toggle Button -->
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<!-- =============================================== -->
+
+			<!-- Left side column. contains the sidebar -->
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<!-- Sidebar user panel -->
+					<div class="user-panel">
+						<div class="pull-left image">
+							<img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+						</div>
+						<div class="pull-left info">
+							<p>Alexander Pierce</p>
+<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+						</div>
+					</div>
+					<!-- search form -->
+					<!--<form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>-->
+					<!-- /.search form -->
+					<!-- sidebar menu: : style can be found in sidebar.less -->
+					<ul class="sidebar-menu">
+						<li class="header">MAIN NAVIGATION</li>
+						<li>
+							<a href="dashboard.html">
+								<i class="fa fa-dashboard"></i> <span>Dashboard</span>
+							</a>
+						</li>
+						<li class="treeview active">
+							<a href="#">
+								<i class="fa fa-files-o"></i>
+								<span>News list</span>
+								<small class="label bg-red">356</small>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li class="active">
+									<a href="news-list.html"><i class="fa fa-circle-o"></i> News list</a>
+								</li>
+								<li>
+									<a href="news-creat.html"><i class="fa fa-circle-o"></i> Add News</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#">
+								<i class="fa fa-users"></i>
+								<span>Tickets Manager</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="ticket-list.html"><i class="fa fa-circle-o"></i> Tickets List </a>
+								</li>
+								<li>
+									<a href="add-ticket.html"><i class="fa fa-circle-o"></i> Add Ticket</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="Message-list.html">
+								<i class="fa fa-laptop"></i>
+								<span>Message list</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- =============================================== -->
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1> 新闻管理 <small>选择你需要的商品</small> </h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-dashboard"></i> Home</a>
+						</li>
+						<li>
+							<a href="#">Examples</a>
+						</li>
+						<li class="active">Blank page</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->
+				<section class="content">
+					<!-- Default box -->
+					<div class="box box-primary">
+						<div class="box-body no-padding">
+							<div class="mailbox-controls">
+								<!-- Check all button -->
+								<button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+                </button>
+								<div class="btn-group">
+									<button type="button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom" title="删除"><i class="fa fa-trash-o"></i></button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="保存"><i class="fa fa-save"></i></button>
+									<a href="news-creat.html" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="bottom" title="新建"><i class="fa fa-plus"></i></a>
+								</div>
+								<!-- /.btn-group -->
+								<button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+								<div class="pull-right">
+									1-50/200
+									<div class="btn-group">
+										<button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
+										<button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+									</div>
+									<!-- /.btn-group -->
+								</div>
+								<!-- /.pull-right -->
+							</div>
+							<div class="table-responsive mailbox-messages">
+								<table class="table table-hover table-striped table-bordered">
+									<tbody>
+										<tr>
+											<th>#</th>
+											<th class="mailbox-name">标题</th>
+											<th class="mailbox-subject">作者 </th>
+											<th class="mailbox-subject">评论 </th>
+											<th class="mailbox-attachment">已发布</th>
+											<th class="mailbox-attachment">编辑</th>
+											<th class="mailbox-date">日期</th>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" class="minimal"></td>
+											<td>
+												<a href="#"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...</td>
+											<td>Alexander Pierce</td>
+											<td><span class="label label-warning">65</span></td>
+											<td><input type="radio" class="minimal"></td>
+											<td><a href="news-creat.html" class="btn btn-default btn-sm" data-toggle="tooltip" title="" data-original-title="编辑">
+                  <i class="fa fa-edit"></i></a></td>
+											<td>2017/03/22 15:35</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- /.table -->
+							</div>
+							<!-- /.mail-box-messages -->
+						</div>
+						<div class="box-footer no-padding">
+							<div class="mailbox-controls">
+								<!-- Check all button -->
+								<button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+                </button>
+								<div class="btn-group">
+									<button type="button" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom" title="删除"><i class="fa fa-trash-o"></i></button>
+									<button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="保存"><i class="fa fa-save"></i></button>
+									<a href="news-creat.html" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="bottom" title="新建"><i class="fa fa-plus"></i></a>
+								</div>
+								<!-- /.btn-group -->
+								<button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+								<div class="pull-right">
+									1-50/200
+									<div class="btn-group">
+										<button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
+										<button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+									</div>
+									<!-- /.btn-group -->
+								</div>
+								<!-- /.pull-right -->
+							</div>
+						</div>
+						<!-- /.box-body -->
+						<div class="box-footer">
+						</div>
+						<!-- /.box-footer-->
+					</div>
+					<!-- /.box -->
+
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+
+			<footer class="main-footer">
+				<div class="pull-right hidden-xs">
+					<b>Version</b> 2.3.8
+				</div>
+				<strong>Copyright &copy; 2017 <a href="#">Tiens Group</a>.</strong> All rights reserved.
+			</footer>
+
+			<!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+			<div class="control-sidebar-bg"></div>
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- jQuery 2.2.3 -->
+		<script src="./plugins/jQuery/jquery-2.2.3.min.js"></script>
+		<!-- Bootstrap 3.3.6 -->
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+		<!-- SlimScroll -->
+		<script src="./plugins/slimScroll/jquery.slimscroll.min.js"></script>
+		<!-- FastClick -->
+		<script src="./plugins/fastclick/fastclick.js"></script>
+		<!-- iCheck 1.0.1 -->
+		<script src="./plugins/iCheck/icheck.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="./dist/js/app.min.js"></script>
+		<!-- PAGE RELATED PLUGIN(S) -->
+		<script src="./plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="./plugins/datatables/dataTables.tableTools.min.js"></script>
+		<script src="./plugins/datatables/dataTables.bootstrap.min.js"></script>
+		<script src="./plugins/datatable-responsive/datatables.responsive.min.js"></script>
+		<!--dataTable end-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/* BASIC ;*/
+				var responsiveHelper_dt_basic = undefined;
+				var responsiveHelper_datatable_fixed_column = undefined;
+				var responsiveHelper_datatable_col_reorder = undefined;
+				var responsiveHelper_datatable_tabletools = undefined;
+
+				var breakpointDefinition = {
+					width1920: 1920,
+					width1024: 1024,
+					width480: 480
+				};
+
+				$('#datatable_tabletools').dataTable({
+					"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-6 hidden-xs'T>r>" +
+						"t" +
+						"<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-sm-6 col-xs-12'p>>",
+					"aoColumnDefs": [{
+						"bSortable": false,
+						"aTargets": [0]
+					}],
+					"oTableTools": {
+						"aButtons": [
+							"copy",
+							"csv",
+							"xls",
+							{
+								"sExtends": "copy",
+								"sButtonText": "复制"
+							},
+							{
+								"sExtends": "xls",
+								"sButtonText": "导出Excel"
+							},
+							{
+								"sExtends": "pdf",
+								"sTitle": "SmartAdmin_PDF",
+								"sPdfMessage": "SmartAdmin PDF Export",
+								"sPdfSize": "letter"
+							},
+							{
+								"sExtends": "print",
+								"sMessage": "Generated by SmartAdmin <i>(press Esc to close)</i>"
+							}
+						],
+						"sSwfPath": "./plugins/datatables/swf/copy_csv_xls_pdf.swf"
+					},
+					"preDrawCallback": function() {
+						// Initialize the responsive datatables helper once.
+						if(!responsiveHelper_datatable_tabletools) {
+							responsiveHelper_datatable_tabletools = new ResponsiveDatatablesHelper($('#datatable_tabletools'), breakpointDefinition);
+						}
+					},
+					"rowCallback": function(nRow) {
+						responsiveHelper_datatable_tabletools.createExpandIcon(nRow);
+					},
+					"drawCallback": function(oSettings) {
+						responsiveHelper_datatable_tabletools.respond();
+					},
+					"paging": true,
+					"lengthChange": false,
+					"searching": false,
+					"ordering": true,
+					"info": true,
+					"autoWidth": true
+				});
+				/* END BASIC */
+				//	$("div.dt-toolbar").hide();
+				//	$("div.dt-toolbar + table").css("cssText","margin-top:0!important;");
+			})
+		</script>
+		<script>
+			$(function() {
+				//Enable iCheck plugin for checkboxes
+				//iCheck for checkbox and radio inputs
+				$('.mailbox-messages input[type="checkbox"].minimal,.mailbox-messages input[type="radio"].minimal').iCheck({
+					checkboxClass: 'icheckbox_minimal-blue',
+					radioClass: 'iradio_minimal-blue'
+				});
+
+				//Enable check and uncheck all functionality
+				$(".checkbox-toggle").click(function() {
+					var clicks = $(this).data('clicks');
+					if(clicks) {
+						//Uncheck all checkboxes
+						$(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+						$(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+					} else {
+						//Check all checkboxes
+						$(".mailbox-messages input[type='checkbox']").iCheck("check");
+						$(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+					}
+					$(this).data("clicks", !clicks);
+				});
+			});
+		</script>
+	</body>
+
+</html>

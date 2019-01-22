@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Account.Bonus.BonusQuery</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/zTree.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" />
+		<script type="text/javascript" src="css/js/jquery.min.js"></script>
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="css/js/html5.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html" class="home"></a>
+			<div class="inline_box">
+				<div class="inline_five h5 bgf"></div>
+				<div class="inline_five h5 bgz"></div>
+				<div class="inline_five h5 bgn"></div>
+				<div class="inline_five h5 bgr"></div>
+				<div class="inline_five h5 bgz"></div>
+			</div>
+			<div class="logo pl10 rel mb10 mt10 ">
+				<div class="logoNav pr10 abs">
+					<p><i class="mr5 icon-ct"><img src="css/img/py.jpg"></i></p>
+				</div>
+			</div>
+			<h1 class="f14 cy pl10">Welcome,Jean lve Ruaule(87034539,7 Stars)</h1>
+		</header>
+		<article class="p10" id="content">
+			<h1 class="p5 mb10 f16 b tc bgr wh">Account.Bonus.BonusQuery</h1>
+			<div class="tabbable-custom">
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab_1_1">
+						<div class="table-toolbar">
+							<div class="mb5">
+								<select class="btn-m"><option value="2016">2016</option></select>
+								<select class="btn-m">
+									<option value="09">09</option>
+									<option value="08">08</option>
+									<option value="07">07</option>
+									<option value="06">06</option>
+									<option value="05">05</option>
+									<option value="04">04</option>
+									<option value="03">03</option>
+									<option value="02">02</option>
+									<option value="01">01</option>
+								</select>
+								<a href="javascript:void(0)" onclick="moveL(2)" class="btn-m redbtn"><i class="iconfont cb wh">Search</i></a>
+							</div>
+						</div>
+						<div class="fixed-table-body">
+							<table class="tab1 mt10">
+                <thead>
+    <tr>
+        <th>Sales Period（周）</th>
+        <th>ServiceBonus</th>
+        <th>ExpandBonus</th>
+        <th>TouchOnBonus </th>
+        <th>TotalBonus ($)</th>
+    </tr>
+</thead>
+<tbody>
+            <tr>
+                <td> 20160901 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+            </tr>
+            <tr>
+                <td> 20160902 </td>
+                <td> 16.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 16.0 </td>
+            </tr>
+            <tr>
+                <td> 20160903 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+            </tr>
+            <tr>
+                <td> 20160904 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+                <td> 0.0 </td>
+            </tr>
+</tbody>
+
+            </table>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab_1_2">
+						<div class="table-toolbar">
+							<div class="mb5">
+								<select class="btn-m">
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+								</select>
+								<select class="btn-m">
+									<option value="09">09</option>
+									<option value="08">08</option>
+									<option value="07">07</option>
+									<option value="06">06</option>
+									<option value="05">05</option>
+									<option value="04">04</option>
+									<option value="03">03</option>
+									<option value="02">02</option>
+									<option value="01">01</option>
+								</select>
+							</div>
+							<div class="p2 bdd pct60 disi">
+								<input type="text" class="bd_none p2 pct100" id="SNDownlineId" placeholder="DistributorId">
+							</div>
+							<a href="javascript:void(0)" onclick="moveL(2)" class="btn-m redbtn pl15"><i class="iconfont cb f16 mr5 wh">Search</i></a>
+						</div>
+						<div class="fixed-table-body zhedie">
+							<ul>
+								<li>
+									<a>
+										<table>
+											<tbody>
+												<tr>
+													<td style="text-align: center;">Tier</td>
+													<td>DisId</td>
+													<td>Name</td>
+													<td>Start</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</a>
+								</li>
+							</ul>
+							<ul id="SNTree">
+								<li id="SNTree_1" class="level0" tabindex="0" hidefocus="true" treenode="">
+									<a>
+										<table>
+											<tbody>
+												<tr>
+													<td class="fa"> <span style="margin-left:0px;" id="SNTree_1_switch" class="button level0 switch noline_open" treenode_switch="">0</span> </td>
+													<td>87034539</td>
+													<td>Failure of renewal</td>
+													<td>8</td>
+													<td>
+														<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_87034539" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('87034539','Failure of renewal',event)"><i class="fa fa-edit"></i> Detail</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</a>
+									<ul id="SNTree_1_ul" class="level0 ">
+										<li id="SNTree_2" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_2_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>87048042</td>
+															<td>KHAYELIHLE MASONDO</td>
+															<td>5</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_87048042" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('87048042','KHAYELIHLE MASONDO',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+											<ul id="SNTree_2_ul" class="level1 " style="overflow: hidden; display: none;">
+												<li id="SNTree_14" class="level2" tabindex="0" hidefocus="true" treenode="">
+													<a>
+														<table>
+															<tbody>
+																<tr>
+																	<td class="fa"> <span style="margin-left:0px;" id="SNTree_14_switch" class="button level2 switch center_docu" treenode_switch="">2</span> </td>
+																	<td>undefined</td>
+																	<td>undefined</td>
+																	<td>undefined</td>
+																	<td>
+																		<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_undefined" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('undefined','undefined',event)"><i class="fa fa-edit"></i> Detail</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li id="SNTree_3" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_3_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>81141898</td>
+															<td>Michael Imoesi</td>
+															<td>5</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81141898" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81141898','Michael Imoesi',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_4" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_4_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>81171766</td>
+															<td>ADF SDF</td>
+															<td>4</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81171766" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81171766','ADF SDF',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_5" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_5_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>81159474</td>
+															<td>Anthonia Ugorji</td>
+															<td>7</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81159474" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81159474','Anthonia Ugorji',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_6" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_6_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>84939504</td>
+															<td>AGATHA OMORO</td>
+															<td>3</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_84939504" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('84939504','AGATHA OMORO',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_7" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_7_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>81144955</td>
+															<td>Failure of renewal</td>
+															<td>8</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81144955" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81144955','Failure of renewal',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_8" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_8_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>81159115</td>
+															<td>Olufolake Amole</td>
+															<td>6</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81159115" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81159115','Olufolake Amole',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_9" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_9_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>87034646</td>
+															<td>Christy F. B. Omose</td>
+															<td>8</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_87034646" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('87034646','Christy F. B. Omose',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_10" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_10_switch" class="button level1 switch noline_close" treenode_switch="">1</span> </td>
+															<td>87034602</td>
+															<td>Failure of renewal</td>
+															<td>8</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_87034602" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('87034602','Failure of renewal',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_11" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_11_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>81171799</td>
+															<td>DFSDFD SFSDFSD</td>
+															<td>4</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81171799" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81171799','DFSDFD SFSDFSD',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_12" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_12_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>87047703</td>
+															<td>Comfort Adesanya</td>
+															<td>5</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_87047703" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('87047703','Comfort Adesanya',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+										<li id="SNTree_13" class="level1" tabindex="0" hidefocus="true" treenode="">
+											<a>
+												<table>
+													<tbody>
+														<tr>
+															<td class="fa"> <span style="margin-left:0px;" id="SNTree_13_switch" class="button level1 switch center_docu" treenode_switch="">1</span> </td>
+															<td>81171800</td>
+															<td>DFSDFD SFSDFSD</td>
+															<td>4</td>
+															<td>
+																<a href="javascript:;" class="btn default btn-xs purple" id="btnDetails_81171800" data-toggle="modal" data-target="#viewAll" onclick="loadSNPerformance('81171800','DFSDFD SFSDFSD',event)"><i class="fa fa-edit"></i> Detail</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="tc pct100 p5" id="footer">2014 Tiens @ All Rights Reserved</footer>
+		</article>
+
+		<!--以下是底部导航-->
+		<nav class="inline_box tc bgwh" id="navTopMenu">
+			<div class="inline_five nav1 mr2">
+				<div class="nav p5 tc wh poi">
+					<div class="name">System</div>
+				</div>
+			</div>
+			<div class="inline_five nav2 mr2">
+				<div class="nav p5 tc wh poi">
+					<div class="name">Business</div>
+				</div>
+			</div>
+			<div class="inline_five nav3 mr2">
+				<div class="nav p5 tc wh poi">
+					<div class="name">Products</div>
+				</div>
+			</div>
+			<div class="inline_five nav4 mr2">
+				<div class="nav p5 tc wh poi">
+					<div class="name">Information</div>
+				</div>
+			</div>
+			<div class="inline_five nav5">
+				<div class="nav p5 tc wh poi">
+					<div class="name">Personal</div>
+				</div>
+			</div>
+		</nav>
+		<ul id="nav1">
+			<li>
+				<a href="changeskin.html" class="vm nav1A">Skin</a>
+			</li>
+			<li>
+				<a href="changecountry.html" class="vm nav1B">Country</a>
+			</li>
+			<li>
+				<a href="changeLanguage.html" class="vm nav1C">Language</a>
+			</li>
+			<li>
+				<a href="index.html" class="vm nav1D">Sign Out</a>
+			</li>
+		</ul>
+		<div id="navItem" class="pct80">
+			<ul id="nav2" style="display:none">
+				<li>
+					<a href="index.html">控制面板</a>
+				</li>
+				<li>
+					<a href="NetWorkTree.html">经销商网络信息查询</a>
+				</li>
+				<li>
+					<a href="PerformanceLive.html">业绩查询（实时）</a>
+				</li>
+				<li>
+					<a href="PerformanceHistory.html">业绩查询（历史）</a>
+				</li>
+				<li>
+					<a href="MultiPerformance.html">多边业绩变化查询</a>
+				</li>
+				<li>
+					<a href="DistributorBonusInformation.html">直销商奖金查询</a>
+				</li>
+				<li>
+					<a href="UserBonus.html">奖金查询（周）</a>
+				</li>
+				<li>
+					<a href="DistributorHonourInformation.html">直销商荣衔奖金信息</a>
+				</li>
+				<li>
+					<a href="UpgradeAssistant.html">直销商升级助手</a>
+				</li>
+				<li>
+					<a href="NewCommerIncrease.html">新人增长趋势图</a>
+				</li>
+				<li>
+					<a href="ZWPerformance.html">整网业绩趋势图</a>
+				</li>
+				<li>
+					<a href="MultiPerformancePercent.html">多边业绩占比图</a>
+				</li>
+			</ul>
+			<ul id="nav3" style="display:none">
+				<li>
+					<a href="product/Nutritions.html">Tiens Mobile E-shop</a>
+				</li>
+			</ul>
+			<ul id="nav4" style="display:none"><li><a href="phone_introduction.html">TIENS 22nd ANNIVERSARY</a></li>
+				<li>
+					<a href="AboutTina.html">About Us</a>
+				</li>
+				<li>
+					<a href="Branch.html">Branch Offices</a>
+				</li>
+				<li>
+					<a href="MeetingsandEvents.html">Meetings and Events</a>
+				</li>
+				<li>
+					<a href="http://sj.tiens.com/M/">Video</a>
+				</li>
+				<li>
+					<a href="AudioBooks.html">Audio Books</a>
+				</li>
+				<li>
+					<a href="Newsfl.html">News</a>
+				</li>
+			</ul>
+			<ul id="nav5" style="display:none">
+				<li>
+					<a href="UpdatePersonalInformation.html">Update Personal Information</a>
+				</li>
+				<li>
+					<a href="changePassword.html">Change Password</a>
+				</li>
+				<li>
+					<a href="suggestions_and_feedbacks.html">Suggestions and Feedbacks</a>
+				</li>
+				<li>
+					<a href="#">Settings</a>
+				</li>
+				<li>
+					<a href="index.html">Quit</a>
+				</li>
+			</ul>
+		</div>
+		<div id="div_mask" ></div>
+		<!--底部导航结束-->
+		<script type="text/javascript" src="css/js/js.js"></script>
+	</body>
+
+</html>

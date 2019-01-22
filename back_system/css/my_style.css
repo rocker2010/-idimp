@@ -1,0 +1,840 @@
+/*-----------------countdown_css-----------------------*/
+nav ul ul li>a, nav ul li a {
+	text-transform: capitalize;
+}
+.jarviswidget header:first-child .tree_structure li a {
+	color: #333 !important;
+}
+.jarviswidget.tree_container {
+	padding: 13px 13px 13px;
+}
+small.small_content {
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #f1c40f;
+}
+.countdown_timer {
+	padding: 20px 0 20px 0;
+}
+#clockdiv1 {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	width: 45%;
+}
+#clockdiv1 > div {
+	padding: 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+#clockdiv1 div > span {
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+#clockdiv2 {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	width: 50%;
+}
+#clockdiv2 > div {
+	padding: 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+#clockdiv2 div > span {
+	padding: 3px 15px 3px 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+.smalltext {
+	padding-top: 5px;
+	font-size: 13px;
+	color: #666;
+}
+#clockdiv1 h6, #clockdiv2 h6 {
+	color: #000000;
+	font-size: 12px;
+}
+#clockdiv1 h3, #clockdiv2 h3 {
+	font-size: 15px;
+ font-weight:
+ margin: 0;
+	text-transform: capitalize;
+	margin: 0;
+}
+.profile_info_block {
+	width: auto;
+	padding: 10px 10px 20px 10px;
+}
+.profile-pic {
+	width: auto;
+}
+.profile-pic>img {
+	top: 6px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	border: 5px solid white;
+}
+.profile_info {
+	width: auto;
+	padding: 0px 10px 10px 20px;
+}
+.profile_buttons {
+	float: right;
+	margin: 5px 20px 0 0px;
+}
+.profile_buttons ul {
+	padding: 53px 0 0 0;
+	float: left;
+}
+.profile_buttons ul li {
+	display: inline-block;
+}
+.align_right {
+	text-align: right;
+}
+.align_center {
+	text-align: center;
+}
+td.result_bold {
+	font-weight: bold;
+}
+.widget-body.no-padding {
+	margin: -13px -13px 0;
+	min-height: 20px;
+}
+.jarviswidget {
+	margin: 0 0 10px;
+}
+.table_block {
+	width: 100%;
+}
+.table_left_block {
+	width: 50%;
+	float: left;
+	padding: 0 0 0px 0;
+}
+.table_right_block {
+	width: 50%;
+	float: left
+}
+.col_table {
+	width: 100%;
+}
+.col_table .form-control {
+	width: 100%;
+}
+.col_table .selectContainer {
+	width: auto;
+}
+ul.action_button {
+	padding: 10px 0 0 0;
+}
+ul.action_button li {
+	list-style-type: none;
+	float: left;
+	padding: 0 10px 0 0px;
+}
+.placement_setting_profile {
+	width: 30%;
+}
+.placement_setting_block {
+	width: 70%;
+}
+.placement_setting_input {
+	width: 40%;
+}
+.table_pagination {
+	float: right;
+}
+.table_pagination .pagination {
+	margin: 0 0 10px 0;
+}
+.sponsor_date_block section {
+	width: 20% !important;
+	float: left !important;
+}
+.widget-body.no-padding {
+	min-height: inherit !important;
+}
+.sponsor_date_block fieldset {
+	padding: 10px 14px 0px 14px !important;
+}
+
+section.team_feild {
+	
+}
+.sponsor_date_block {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	margin: 0px 0 13px 0;
+}
+
+.sponsor_date_block.team {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+}
+.widget_body_sponsor_date_block {
+	width: 100%;
+}
+.sponsor_date_block .action_buttons {
+	margin: 0 10px 0 0px;
+	float: left;
+}
+.sponsor_date_block .action_buttons_nobg {
+	margin: 6px 0 0 0;
+}
+.distributor_input {
+	width: 100%;
+	float: left;
+}
+.distributor_input input {
+	width: 20%;
+	float: left;
+	margin: -17px 10px 10px 0px;
+}
+.seprator, .seprator_white {
+	float: left;
+	padding: 0 10px 0px 0px;
+	position: relative;
+	bottom: 13px;
+}
+.action_buttons {
+	margin: -16px 0 0 0;
+}
+.table_align th {
+	text-align: center;
+}
+.table_align tr {
+	text-align: center;
+}
+.sum_value {
+	color: #C00;
+	text-align: right;
+}
+.message_badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 2px 4px;
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #F00;
+	border-radius: 10px;
+	position: absolute;
+	margin: 0px 0 0 -3px;
+	border: 2px solid white;
+}
+.seprator_white {
+	color: #FFF;
+}
+p.member_count_description {
+	float: left;
+}
+#member_count {
+	color: #C30;
+	font-weight: bold;
+}
+.bonus_year_block {
+	float: left;
+}
+.bonus_year_block .form-group {
+	float: left;
+}
+.bonus_year_block .form-control {
+	float: left;
+}
+.bonus_table {
+}
+td.bonus_total_price {
+	color: #C30;
+	font-weight: bold;
+}
+.bonus_total {
+	float: right;
+}
+.bonus_total h6 {
+	color: #06C;
+	margin: -10px 10px 20px 0px;
+}
+.bonus_total span {
+	color: #C30;
+}
+.selectContainer {
+	width: auto;
+}
+
+.widget-body_from_date {
+	float: left;
+	margin: 0 0 10px 0;
+}
+.seprator_text {
+	float: left;
+	padding: 8px 0 0 0;
+	font-weight: bold;
+}
+.week_bonus_result {
+}
+.result_block {
+	width: 50%;
+	float: left;
+}
+.result_block p {
+	font-size: 14px;
+}
+span.result_label {
+	font-weight: 600;
+}
+span.block_result {
+	color: #000;
+}
+.alert-block {
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.clear_block {
+	clear: both;
+}
+.jarviswidget>header {
+	clear: both;
+}
+.check_green {
+	color: #27ae60;
+}
+.check_red {
+	color: #e74c3c;
+}
+.top_buttons {
+	float: right;
+}
+.order_search {
+	float: right;
+	width: auto;
+	clear: both;
+	margin: -10px 0 10px 0;
+}
+.order_search input {
+	float: right;
+	width: 70%;
+	height: 30px;
+	margin: 1px 3px 0px 0px;
+}
+.order_search a {
+	float: right;
+}
+.advanced_search {
+	margin: -10px 10px 0 0px;
+}
+.graph_select {
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.graph_select select.form-control {
+	float: left;
+	width: 15%;
+	margin: 0 15px 0 0px;
+}
+.graph_select .selectContainer {
+	float: left;
+	width: 100%;
+}
+.graph_select .widget-body {
+}
+.adjust {
+	padding: 13px 0 10px 0 !important;
+}
+.left {
+	float: left;
+}
+.tree_info {
+	float: left;
+}
+.tree_info a {
+	background: rgba(33, 33, 33,0.4);
+    color: #fff;
+    text-decoration: none;
+    padding: 1px 5px 2px 5px;
+    border-radius: 5px;
+}
+.tree_info div {
+	float: left;
+	padding: 0px 0 0px 10px;
+}
+.tree li span {
+	border: 1px dotted #999;
+}
+span>i.fa-minus-circle, span>i.fa-plus-circle {
+	float: left;
+	line-height: 1;
+}
+.dt-toolbar-footer
+{
+	background:#FFF;
+}
+span.tab_button_right
+{
+float: right !important;
+margin:-7px 7px 0px 0px !important;
+}
+.btn-primary.edit {
+    color: #fff;
+    background-color: #333333;
+    border-color: #000000;
+}
+.shopped_prd_img img
+{
+	width:40px;
+	height:40px;
+}
+table.align_middle td
+{
+	vertical-align:middle !important;
+}
+table.align_middle span.label{
+	font-size:85%;
+}
+td.input_value
+{
+width:10px;	
+text-align:center;
+}
+
+td.input_value input.form-control
+{
+	width: 70px;
+	text-align:center;
+}
+.unfinish{	color:#F90;}
+.cancel{	color:#C00;}
+.finish{	color:#090;}
+
+/*--------------Ranking_color_order----------------------*/
+.tree_block {
+	margin: 10px 0 10px 5px;
+}
+.rank_value
+{
+	float:left;
+}
+.ranking_status {
+	padding: 20px 0 20px 10px;
+	float: left;
+    width: 100%;
+}
+.ranking_status .label {
+	font-size: 100%;
+}
+.ranking_status hr.simple
+{
+	margin-top: 20px;
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+}
+.general {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+.rank8 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c3c+0,c0392b+50 */
+	background: #e74c3c; /* Old browsers */
+	background: -moz-linear-gradient(top, #e74c3c 0%, #c0392b 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e74c3c 0%, #c0392b 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e74c3c 0%, #c0392b 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74c3c', endColorstr='#c0392b', GradientType=0 ); /* IE6-9 */
+	color: white
+}
+.rank7 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e67e22+0,d35400+50 */
+	background: #e67e22; /* Old browsers */
+	background: -moz-linear-gradient(top, #e67e22 0%, #d35400 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e67e22 0%, #d35400 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e67e22 0%, #d35400 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67e22', endColorstr='#d35400', GradientType=0 ); /* IE6-9 */
+	color: white
+}
+.rank6 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1c40f+0,f39c12+50 */
+	background: #f1c40f; /* Old browsers */
+	background: -moz-linear-gradient(top, #f1c40f 0%, #f39c12 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f1c40f 0%, #f39c12 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f1c40f 0%, #f39c12 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1c40f', endColorstr='#f39c12', GradientType=0 ); /* IE6-9 */
+	color: white
+}
+.rank5 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ecc71+1,27ae60+50 */
+	background: #2ecc71; /* Old browsers */
+	background: -moz-linear-gradient(top, #2ecc71 1%, #27ae60 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #2ecc71 1%, #27ae60 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #2ecc71 1%, #27ae60 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ecc71', endColorstr='#27ae60', GradientType=0 ); /* IE6-9 */
+	color: white
+}
+.rank4 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3498db+0,2980b9+50 */
+	background: #3498db; /* Old browsers */
+	background: -moz-linear-gradient(top, #3498db 0%, #2980b9 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #3498db 0%, #2980b9 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3498db 0%, #2980b9 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#2980b9', GradientType=0 ); /* IE6-9 */
+	color: white
+}
+.rank3 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+	background: #f3e2c7; /* Old browsers */
+	background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+.rank2 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+	background: #f5f6f6; /* Old browsers */
+	background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6', GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+.rank1 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
+	background: #fceabb; /* Old browsers */
+	background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+.tree ul ul li:hover {
+	background: none !important;
+}
+.tab-content.table-responsive {
+	border: 0px solid #ddd;
+}
+.separate
+{
+	float:left;
+	padding: 7px 10px 0 0px;
+}
+
+.sales_select  select.form-control {
+    float: left;
+    width: 8%;
+    margin: 0 15px 0 0px;
+}
+.graph_select h6
+{
+	display:none;
+}
+.selectContainer select.distributor
+{
+	width: 14%;
+}
+/*-----------Popup_profile-------------------*/
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0 10px;
+    background: #09F;
+    border-bottom-color: #eee;
+	font-size:12px;
+	color:#FFF;
+}
+.ui-dialog .ui-dialog-title {
+   
+    color: #fff;
+   
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    margin-top: -11px;
+    margin-right: -1px;
+}
+.profile_top
+{
+	width:100%;
+	float: left;
+    padding: 5px 0 10px 0;
+}
+.profile_top_left
+{
+       
+	float:left;
+	padding: 0 10px 0 0px;
+}
+.profile_top_left img
+{
+	width:60px;
+	height:100%;
+	top: 6px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    border: 3px solid white;
+}
+.profile_top_right
+{
+	width: 70%;
+    float: left;
+}
+.profile_top_right span
+{
+	width:100%;
+	float: left;
+	padding: 2px 0 1px 0;
+}
+.profile_top_right #star
+{
+	color:#F90;
+}
+
+.profile_bottom .table {
+    width: 100%;
+    margin-bottom:0px; 
+}
+  
+
+
+/*-----------Popup_profile_end------------------*/
+
+/*---------------------------------------------*/
+@media (max-width:1024px) {
+.profile_info {
+	width: 34%;
+}
+.placement_setting_block {
+	width: 100%;
+}
+}
+
+@media (max-width:768px) {
+.profile_info {
+	width: 40%;
+	padding: 0px 10px 10px 20px;
+}
+.profile-pic>img {
+	margin-right: 0px;
+}
+}
+
+@media (max-width:479px) {
+.profile_info {
+	width: 67%;
+	padding: 0px 10px 10px 10px;
+	float: left;
+}
+.profile_buttons ul {
+	padding: 13px 0 0 0;
+	float: left;
+}
+#clockdiv1, #clockdiv2 {
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+.profile-pic+div, .profile-pic+div+div {
+	padding-left: 10px;
+	padding-right: 0;
+}
+.table_left_block, .table_right_block {
+	width: 100%;
+}
+.col_table .form-control {
+	width: 40%;
+	float: left;
+	margin: 0 0 0 10px;
+}
+.placement_setting_input {
+	width: 100%;
+}
+.table_pagination {
+	width: 100%;
+	text-align: center;
+}
+.seprator, .seprator_white {
+	display: none;
+}
+.distributor_input input {
+	width: 100%;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+.action_buttons {
+	margin: 0px 0 10px 0;
+	float: right;
+}
+.message_badge {
+	position: relative;
+	right: 0px;
+}
+p.member_count_description {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 0px 0 10px 0;
+}
+.bonus_total h6 {
+	margin: -18px 8px 11px 0px;
+}
+.selectContainer {
+	width: auto;
+}
+.selectContainer select.form-control {
+	margin: 0px 0 10px 0;
+}
+.selectContainer a {
+	float: right;
+}
+.from_date {
+	width: 47%;
+}
+.date_search a {
+	float: right;
+	margin: -10px 20px 10px 0px;
+}
+.seprator_text {
+	padding: 48px 0 0 0;
+}
+.result_block {
+	width: 100%;
+}
+.order_search input {
+	width: 60%;
+}
+.order_search {
+	margin: -10px 9px 10px 0px;
+}
+.advanced_search {
+	margin: 0px 10px 10px 0px;
+	float: right;
+}
+.graph_select select.form-control {
+	width: 45%;
+	margin: 0 15px 0 0px;
+}
+.graph_select .selectContainer a {
+	float: left;
+	margin: 10px 0 0 23px;
+}
+.sponsor_date_block section {
+	width: 100% !important;
+	float: left !important;
+}
+.sponsor_date_block .action_buttons {
+	margin: 0 16px 10px 0px;
+	float: right;
+}
+table.has-columns-hidden>tbody>tr.row-detail>td>ul li {
+	padding: 5px 0 5px 0px;
+}
+.align_center {
+	text-align: left;
+}
+.align_right {
+	text-align: left;
+}
+.ranking_status span {
+	margin: 0px 7px 5px 0px;
+	float: left;
+}
+.rank_value {
+	width: 100%;
+	float: left;
+}
+span.rank_label {
+	width: 100%;
+}
+span.rank_label_long sapn
+{
+	width: 100%;
+}
+.tree_block {
+	margin: 0;
+	float: left;
+}
+.tree_info {
+	float: none;
+}
+
+.ranking_status {
+	padding:10px 0 20px 10px;
+	float: left;
+}
+.ranking_status hr.simple {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    width: 90%;
+    float: left;
+}
+
+.table_left_block
+{
+padding:0 0 0 0;	
+}
+.table_block .table-responsive
+{
+margin-bottom:0;
+}
+.sales_select  select.form-control {
+   float: left;
+    width: 100%;
+    margin: 10px 15px 0 0px;
+}
+.separate {
+    width:100%;
+	text-align:center;
+}
+.sales_select  .selectContainer a {
+    float: left;
+    margin: 10px 0 0 13px;
+}
+h6.display_element
+{
+	display:block;
+}
+
+}
+
+@media (max-width:320px) {
+#clockdiv1 > div, #clockdiv2 > div {
+	padding: 5px;
+}
+
+.profile_info {
+	width: 75%;
+}
+.selectContainer select.form-control {
+	margin: 0px 0 10px 10px;
+}
+.profile_info {
+	width: 56%;
+}
+.graph_select .selectContainer a {
+	float: left;
+	margin: 0 0 0 7px;
+}
+.selectContainer select.input_median
+{
+	margin: 0px 0 10px 0px;
+}
+}
